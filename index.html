@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>肇庆学院校园打印服务</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta name ="keywords" content="肇庆学院,打印,校园,服务"/>
+<meta name="description" content="专属肇庆学院的校园打印服务,倾心为每位同学服务在线下单，在线付款/货到付款，送货上门无须拥挤，无须排队，10s完成注册，通通在线完成"/>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/loginreg.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="UNITED COMMS Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+$(function(){ 
+//方式一 jQuery(普通应用时推荐，简单易用) 
+$("#signup-username").blur(function(){ //文本框鼠标焦点消失事件 
+$.get("check_user.php?user="+$("#signup-username").val(),null,function(data) //此处get方式 可换为post方式按需求调整，其他无需修改使用方式一样 
+{ 
+$("#chk").html(data); //向ID为chk的元素内添加html代码 
+}); 
+
+}) 
+//
+$("#signup-password2").blur(function(){ //文本框鼠标焦点消失事件 
+if($("#signup-password").val()==$("#signup-password2").val())
+{
+   chk1.innerHTML='<font color=green>输入正确</font>' ; 
+}
+else
+{
+    chk1.innerHTML='<font color=red>两次密码不一样</font>' ;
+    document.sform1.email.focus(); 
+}
+}) 
+//
+ $("#signup-email").blur(function(){ //文本框鼠标焦点消失事件 
+var TextVal = $("#signup-email").val();            
+　　var Regex = /^(?:\w+\.?)*\w+@(?:\w+\.)*\w+$/;            
+　　if (Regex.test(TextVal))
+    {                
+　　  chk3.innerHTML='<font color=green>输入正确</font>' ;
+         
+    }
+    else{
+        chk3.innerHTML='<font color=red>格式不对</font>' ;
+    }
+}) 
+//
+ $("#signup-password").blur(function(){ //文本框鼠标焦点消失事件 
+    var TextVal = $("#signup-password").val();                        
+　　if (TextVal.length>5)
+    {                
+　　  chk4.innerHTML='<font color=green>输入正确</font>' ;
+         
+    }
+    else{
+        chk4.innerHTML='<font color=red>密码要六位以上</font>' ;
+    }
+}) 
+//
+}) 
+
+</script>
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+			</div>
+			<div class="header-right">
+				<h4><i class="phone"></i>15361710334 QQ 617708958</h4>
+				<span class="menu"></span>
+				<div class="top-menu">
+					<ul>                                              
+						<li><a class="active" href="#">首页</a></li>
+						<li><a href="#">加盟</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">官方微博</a></li>
+						
+					</ul>
+				</div>
+				<!-- script for menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+			<!-- script for menu -->
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- header-section-ends -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-info">
+				<h2>专属肇庆学院的校园打印服务</h2>
+				<p>倾心为每位同学服务</p>
+				<p>在线下单，在线付款/货到付款，送货上门</p>
+				<p>无须拥挤，无须排队，10s完成注册，通通在线完成</p>
+				<div >
+				<nav class="main_nav">
+				<a href="#0" class="btn btn-1 btn-1d">注册/登陆</a>
+				<!--a href="#" class="btn btn-1 btn-1d">注册</a-->
+				</nav>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="content">
+	<div class="services-section">
+		<div class="container">
+			<h3>我们的服务</h3>
+			<div class="services-section-grids">
+				<div class="col-md-4 services-section-grid1">
+					<div class="services-section-grid1-top">
+						<h4>打印服务</h4>
+						<p>我们提供A4单/双面黑白激光打印，单面0.10元/张，双面0.15元/张</p>
+						<p>地址：肇庆学院五区13栋306宿舍</p>
+						<div class="icons">
+							<div class="icon-left">
+								<i class="call"></i>
+							</div>
+							<div class="icon-right">
+								<a href="#"><i class="arrow arrow1"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						</div>
+					<div class="services-section-grid1-bottom">
+						<h4>在线咨询</h4>
+						<p>您有任何问题均可通过电话/短信/网站客服联系我们，我们尽力尽快解决您的问题</p>
+						<p>电话：18998589275 QQ： 1144205233</p>
+						<div class="icons">
+							<div class="icon-left">
+								<i class="callmsg"></i>
+							</div>
+							<div class="icon-right">
+								<a href="#"><i class="arrow arrow2"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 services-section-grid2">
+					<h4>校园打印服务团队</h4>
+					<p>项目自2015年中旬策划成立，2015年底正式上线。我们致力打造快捷便利的校园打印服务。</p>
+					<p>你还在为打印去拥挤、排长队吗？你还在为因打印而导致U盘中毒烦恼吗？我们推出在线下单，在线传送打印文档，在线支付/货到付款，免费送货上门等一系列服务，倾心为您服务，解决您的烦恼！你还在等什么？立刻注册登陆，开始享受便利服务！</p>
+					<p>地址：肇庆学院五区13栋306宿舍</p>
+					
+					<div class="icons icons2">
+							<div class="icon-left">
+								<i class="interact"></i>
+							</div>
+							<div class="icon-right">
+								<a href="#"><i class="arrow arrow3"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+				</div>
+				<div class="col-md-4 services-section-grid3">
+					<div class="services-section-grid3-top">
+						<h4>加盟</h4>
+						<p>诚挚欢迎各宿舍区打印经营者加盟，共同打造专属肇庆学院的校园云打印服务</p>
+						<p>电话：15361710334 QQ： 617708958</p>
+						<div class="icons">
+							<div class="icon-left">
+								<i class="dt1"><img src="images/hz.png"  height=55 width=65 /></i>
+							</div>
+							<div class="icon-right">
+								<a href="#"><i class="arrow arrow4"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="services-section-grid3-bottom">
+						<h4>更多服务</h4>
+						<p>努力开发中</p>
+						<p>欢迎各界提出宝贵意见</p>
+						<br/>
+						<div class="icons">
+							<div class="icon-left">
+								<i class="zoom"></i>
+							</div>
+							<div class="icon-right">
+								<a href="#"><i class="arrow arrow5"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+		
+	
+	</div>
+	
+	<!--login-->
+    <div class="cd-user-modal">
+        <div class="cd-user-modal-container">
+            <ul class="cd-switcher">
+                <li><a href="#0">用户登录</a></li>
+                <li><a href="#0">注册新用户</a></li>
+            </ul>
+            <div id="cd-login">
+                <!-- 登录表单 -->
+                <form class="cd-form" >
+                <p class="fieldset">
+                    <label class="image-replace cd-username" for="signin-username">
+                        用户名</label>
+                    <input class="full-width has-padding has-border" id="signin-username" type=text"
+                        placeholder="输入用户名" name="user"/>
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signin-password">
+                        密码</label>
+                    <input class="full-width has-padding has-border" type="password" id="signin-password" type="password"
+                        placeholder="输入密码" name="psw"/>
+                </p>
+                <p class="fieldset">
+                    <input type="checkbox" id="remember-me" checked>
+                    <label for="remember-me">
+                        记住登录状态</label>
+                </p>
+                
+                <font color="red"><span id="confirm"></span></font>
+                <p class="fieldset">
+                    <input class="full-width2" type="submit" id="loginsubmit" value="登 录"/>
+                </p>
+                </form>
+            </div>
+            <div id="cd-signup">
+                <!-- 注册表单 -->
+                <form name="Form1" class="cd-form" >
+                <p class="fieldset">
+                    <label class="image-replace cd-username" for="signup-username">
+                        用户名</label>
+                    <input class="full-width has-padding has-border" id="signup-username" type="text"
+                        placeholder="输入用户名"  name="user"/>
+                        <span id="chk"></span>
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="signup-email">
+                        邮箱</label>
+                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="输入mail" name="email"/>
+                <span id="chk3"></span>
+                </p>
+      
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password">
+                        密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password" type="password"
+                        placeholder="输入密码" name="psw"/>
+                        <span id="chk4"></span>
+                </p>
+                 <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password">
+                        确认密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password2" type="password"
+                        placeholder="确认密码" name="psw2" />
+                        <span id="chk1"></span>
+                </p>
+                <p class="fieldset">
+                    <!--input type="checkbox" id="accept-terms"/-->
+                    <label for="accept-terms">
+                        我已阅读并同意 <a href="#">用户协议</a></label>
+                        <span style="color: red;" id="signuptip"></span>
+                </p>
+                <p class="fieldset">
+                    <input class="full-width2" type="submit" id="reginsubmit"  value="注册新用户"/>
+                </p>
+                </form>
+            </div>
+            <a href="#0" class="cd-close-form">关闭</a>
+        </div>
+    </div>
+	<!--login end-->
+	<div class="footer text-center">
+		
+		<div class="copyright">
+			<p>Copyright &copy; 2015.肇庆学院校园打印服务团队 所有</p>  
+			<p><a href="http://www.miibeian.gov.cn">备案号：粤ICP备15113762号</a></p>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>用户注册</title>
+<meta charset="utf8"/>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="1.js"></script>
+</head>
+
+<body>
+<form name="form1"  onsubmit="return checkreg()" method="post" action="1.php"  >
+  <table width="372" height="89" border="0" cellpadding="0" cellspacing="0" bordercolor="#0000FF" align="center">
+    <tr>
+      <td width="127" height="32">用户名:</td>
+      <td width="122"><label>
+      <input type="text" name="username" id="User"/>
+      </label>
+    </tr>
+    <tr>
+      <td height="27">密码:</td>
+      <td height="27" colspan="2"><input type="password" name="pass" id="Pwd"></td>
+    </tr>
+    <tr>
+      <td height="27">确认密码:</td>
+      <td height="27" colspan="2"><input type="password" name="passagain" id="Pwdagain"></td>
+    </tr>
+    <tr>
+      <td height="27">QQ:</td>
+      <td height="27" colspan="2"><input type="text" name="qq" id="Qq" onblur="Isval(Qq,'QQ')"></td>
+    </tr>
+    <tr>
+      <td height="27">E-mail:</td>
+      <td height="27" colspan="2"><input type="text" name="email" id="Email"></td>
+    </tr>
+<tr><td>
+<input type="submit" name="Submit" value="提交" ></input>    
+</td>
+<td colspan="2">
+    <input type="reset" name="Reset" value="重置" /> </td>
+  </tr> </table>
+</form>
+</body>
+</html>
